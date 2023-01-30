@@ -1,0 +1,10 @@
+@use "./variables.scss";
+
+main{
+    margin-top: 15vw;
+    .current-page{
+        border: 1px solid variables.$bottom-banner;
+        border-left: none;
+        border-right: none;
+    }
+}

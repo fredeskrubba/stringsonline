@@ -1,3 +1,82 @@
+nav {
+  position: fixed;
+  top: 0;
+  margin: 4vw 4vw;
+  display: flex;
+}
+nav .nav-links {
+  position: relative;
+  right: 26.2vw;
+  font-size: 1.1vw;
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+  width: 30vw;
+}
+nav .nav-links .link-button {
+  color: #fff;
+  text-decoration: none;
+  font-family: titillium-reg;
+}
+nav .nav-links .login-btn {
+  color: #131313;
+  background-color: #00F9B6;
+  padding: 0.5vw 1.5vw;
+  border-radius: 5px;
+  text-decoration: none;
+}
+nav .search-field {
+  position: relative;
+  right: 29vw;
+  top: -0.9vw;
+}
+nav .search-field .upper-search {
+  display: flex;
+  color: #fff;
+  gap: 1vw;
+  width: 20vw;
+}
+nav .search-field .upper-search .upper-search-div {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+nav .search-field .upper-search img {
+  width: 1.6vw;
+  height: 1.7vw;
+}
+nav .search-field .searchbar-cont {
+  display: flex;
+  gap: 1vw;
+  margin-top: 0.3vw;
+}
+nav .search-field .searchbar-cont .searchbar {
+  padding: 0.8vw;
+  background-color: #0A1D1C;
+  outline: 1px solid #1F5E5B;
+  border: none;
+  border-radius: 3px;
+  width: 15vw;
+}
+nav .search-field .searchbar-cont .searchbar::placeholder {
+  color: #00F9B6;
+}
+nav .search-field button {
+  padding: 0.4vw 1vw;
+  background-color: #00F9B6;
+  border-radius: 10px;
+  border: none;
+}
+
+main {
+  margin-top: 15vw;
+}
+main .current-page {
+  border: 1px solid #393939;
+  border-left: none;
+  border-right: none;
+}
+
 body {
   background-color: #131313;
 }
