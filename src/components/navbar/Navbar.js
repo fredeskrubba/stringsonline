@@ -1,18 +1,25 @@
 import React from 'react'
-import {
-     Routes, Route, Link
-  } from "react-router-dom";
-  import Home from "../../pages/Home";
+import {Link, Route} from "wouter"
+import Home from "../../pages/Home"
 
 
 const Navbar = () => {
     
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
     
+
   return (
-    <Link to={"/"}>123</Link>
+    <div>
+        <Link href="/">
+          Home
+        </Link>
+        <Link href="/test">
+          test
+        </Link>
+
+        <Route path="/">
+          <Home/>
+        </Route>
+    </div>
   )
 }
 
