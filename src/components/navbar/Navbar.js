@@ -40,6 +40,7 @@ const Navbar = () => {
                     </div>
                     <div className='upper-search-div'>
                         <CartIcon className='icon cart-icon'/>
+                        <div className='cart-item-bubble'>{cartItems}</div>
                     </div>
                 </div>
                 <div className='searchbar-cont'>

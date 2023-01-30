@@ -49,6 +49,17 @@ nav{
             .cart-icon{
                 margin-right: 1vw;
             }
+            .cart-item-bubble {
+                position: absolute;
+                background-color: variables.$interaction;
+                padding: 0.2vw;
+                border-radius: 100%;
+                right: 0.3vw;
+                width: 1vw;
+                height: 1vw;
+                display: flex;
+                justify-content: center;
+            }
         }
         .searchbar-cont{
             display: flex;
