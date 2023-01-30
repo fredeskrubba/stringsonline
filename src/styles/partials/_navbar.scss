@@ -1,0 +1,89 @@
+@use "./variables.scss";
+
+nav{
+    position: fixed;
+    top: 0;
+    margin: 4vw 4vw;
+    display: flex;
+    .nav-links{
+        position: relative;
+        right: 26.2vw;
+        font-size: 1.1vw;
+        display: flex;
+        gap: 2vw;
+        align-items: center;
+        width: 26vw;
+        .link-button{
+            color: variables.$text-color-1;
+            text-decoration: none;
+            font-family: titillium-reg;
+        }
+        .login-btn{
+            color: variables.$background;
+            background-color: variables.$text-color-2;
+            padding: 0.5vw 1.5vw;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    }
+    .search-field{
+        position: relative;
+        right: 24vw;
+        top: -1.5vw;
+        .upper-search {
+            display: flex;
+            color: variables.$text-color-1;
+            justify-content: space-between;
+            gap: 2vw;
+            .upper-search-div{
+                display: flex;
+                align-items: center;
+                gap: 0.2vw;
+                font-size: 1vw;
+                
+            }
+            .icon{
+                width: 2vw;
+                height: 2vw;
+            }
+            .cart-icon{
+                margin-right: 1vw;
+            }
+            .cart-item-bubble {
+                position: absolute;
+                background-color: variables.$interaction;
+                padding: 0.2vw;
+                border-radius: 100%;
+                right: 0.3vw;
+                width: 1vw;
+                height: 1vw;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .searchbar-cont{
+            display: flex;
+            gap: 1vw;
+            margin-top: 0.3vw;
+            .searchbar{
+                padding: 0.8vw;
+                background-color: #0A1D1C;
+                outline: 1px solid #1F5E5B;
+                border: none;
+                border-radius: 3px;
+                width: 20vw;
+                &::placeholder{
+                    color: variables.$text-color-2;
+                }
+            }
+
+        }
+        button{
+            padding: 0.4vw 1vw;
+            background-color: variables.$text-color-2;
+            border-radius: 10px;
+            border: none;
+        }
+    }
+}
+

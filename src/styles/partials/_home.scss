@@ -1,0 +1,13 @@
+@use "./variables.scss";
+
+main{
+    margin-top: 15vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    .current-page{
+        border: 1px solid variables.$bottom-banner;
+        border-left: none;
+        border-right: none;
+        color: variables.$text-color-2  ;
+    }
+}

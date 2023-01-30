@@ -1,0 +1,8 @@
+@use "./partials/navbar.scss";
+@use "./partials/variables.scss";
+@use "./partials/home";
+
+
+body {
+    background-color: variables.$background;
+}
