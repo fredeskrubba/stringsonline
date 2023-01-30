@@ -12,7 +12,7 @@ nav{
         display: flex;
         gap: 2vw;
         align-items: center;
-        width: 30vw;
+        width: 26vw;
         .link-button{
             color: variables.$text-color-1;
             text-decoration: none;
@@ -28,22 +28,26 @@ nav{
     }
     .search-field{
         position: relative;
-        right: 29vw;
-        top: -0.9vw;
+        right: 24vw;
+        top: -1.5vw;
         .upper-search {
             display: flex;
             color: variables.$text-color-1;
-            gap: 1vw;
-            width: 20vw;
+            justify-content: space-between;
+            gap: 2vw;
             .upper-search-div{
                 display: flex;
                 align-items: center;
-                gap: 0.5vw;
+                gap: 0.2vw;
+                font-size: 1vw;
                 
             }
-            img{
-                width: 1.6vw;
-                height: 1.7vw;
+            .icon{
+                width: 2vw;
+                height: 2vw;
+            }
+            .cart-icon{
+                margin-right: 1vw;
             }
         }
         .searchbar-cont{
@@ -56,7 +60,7 @@ nav{
                 outline: 1px solid #1F5E5B;
                 border: none;
                 border-radius: 3px;
-                width: 15vw;
+                width: 20vw;
                 &::placeholder{
                     color: variables.$text-color-2;
                 }

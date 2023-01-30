@@ -11,7 +11,7 @@ nav .nav-links {
   display: flex;
   gap: 2vw;
   align-items: center;
-  width: 30vw;
+  width: 26vw;
 }
 nav .nav-links .link-button {
   color: #fff;
@@ -27,23 +27,27 @@ nav .nav-links .login-btn {
 }
 nav .search-field {
   position: relative;
-  right: 29vw;
-  top: -0.9vw;
+  right: 24vw;
+  top: -1.5vw;
 }
 nav .search-field .upper-search {
   display: flex;
   color: #fff;
-  gap: 1vw;
-  width: 20vw;
+  justify-content: space-between;
+  gap: 2vw;
 }
 nav .search-field .upper-search .upper-search-div {
   display: flex;
   align-items: center;
-  gap: 0.5vw;
+  gap: 0.2vw;
+  font-size: 1vw;
 }
-nav .search-field .upper-search img {
-  width: 1.6vw;
-  height: 1.7vw;
+nav .search-field .upper-search .icon {
+  width: 2vw;
+  height: 2vw;
+}
+nav .search-field .upper-search .cart-icon {
+  margin-right: 1vw;
 }
 nav .search-field .searchbar-cont {
   display: flex;
@@ -56,7 +60,7 @@ nav .search-field .searchbar-cont .searchbar {
   outline: 1px solid #1F5E5B;
   border: none;
   border-radius: 3px;
-  width: 15vw;
+  width: 20vw;
 }
 nav .search-field .searchbar-cont .searchbar::placeholder {
   color: #00F9B6;
@@ -70,11 +74,14 @@ nav .search-field button {
 
 main {
   margin-top: 15vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
 }
 main .current-page {
   border: 1px solid #393939;
   border-left: none;
   border-right: none;
+  color: #00F9B6;
 }
 
 body {

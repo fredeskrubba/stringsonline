@@ -1,16 +1,17 @@
 import React from 'react'
 import {Link, Route} from "wouter"
 import Home from "../../pages/Home"
-import background from "../../assets/images/header-bg.png"
-import phone from "../../assets/images/phone-icon.png"
-import mail from "../../assets/images/mail-icon.png"
-import cart from "../../assets/images/cart-icon.png"
+import {ReactComponent as PhoneIcon} from "../../assets/images/phone-icon.svg"
+import {ReactComponent as MailIcon} from "../../assets/images/mail-icon.svg"
+import {ReactComponent as CartIcon} from "../../assets/images/cart-icon.svg"
+import background from "../../assets/images/header-bg.png" 
 import { ReactComponent as ArrowIcon } from '../../assets/images/arrow-icon.svg'
+import useNavStore from './navstore'
 
 const Navbar = () => {
     
+    const cartItems = useNavStore((state) => state.cartItems)
     
-
   return (
     <div>
         <nav>
@@ -30,15 +31,15 @@ const Navbar = () => {
             <section className='search-field'>
                 <div className='upper-search'>
                     <div className='upper-search-div'>
-                        <img src={mail} alt="mail-icon" />
+                        <MailIcon className='icon'/>
                         <h6>SALES@STRINGSONLINE.COM</h6>
                     </div>
                     <div className='upper-search-div'>
-                        <img src={phone} alt="phone-icon" />
+                        <PhoneIcon className='icon'/>
                         <h6>+45 98 12 22 68</h6>
                     </div>
                     <div className='upper-search-div'>
-                        <img src={cart} alt="cart-icon" />
+                        <CartIcon className='icon cart-icon'/>
                     </div>
                 </div>
                 <div className='searchbar-cont'>
