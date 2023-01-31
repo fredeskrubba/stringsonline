@@ -4,14 +4,17 @@ nav {
   margin: 4vw 4vw;
   display: flex;
 }
+nav .nav-bg {
+  width: 70%;
+}
 nav .nav-links {
   position: relative;
-  right: 26.2vw;
-  font-size: 1.1vw;
+  right: 20.5vw;
+  font-size: 1vw;
   display: flex;
   gap: 2vw;
   align-items: center;
-  width: 26vw;
+  width: 10vw;
 }
 nav .nav-links .link-button {
   color: #fff;
@@ -27,8 +30,8 @@ nav .nav-links .login-btn {
 }
 nav .search-field {
   position: relative;
-  right: 24vw;
-  top: -1.5vw;
+  right: 8vw;
+  top: -2vw;
 }
 nav .search-field .upper-search {
   display: flex;
@@ -48,6 +51,9 @@ nav .search-field .upper-search .icon {
 }
 nav .search-field .upper-search .cart-icon {
   margin-right: 1vw;
+}
+nav .search-field .upper-search .cart-icon:hover {
+  cursor: pointer;
 }
 nav .search-field .upper-search .cart-item-bubble {
   position: absolute;
@@ -93,6 +99,34 @@ main .current-page {
   border-left: none;
   border-right: none;
   color: #00F9B6;
+  margin-bottom: 2vw;
+}
+main .hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  max-height: 20vw;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  border: 1px solid #1F5E5B;
+  background-color: #0A1D1C;
+  width: 8vw;
+  height: 100%;
+  padding: 1vw 1vw 0vw 1vw;
+  box-sizing: border-box;
+}
+.side-nav a {
+  text-decoration: none;
+  color: #00F9B6;
+}
+
+.hero-banner {
+  width: 100%;
+  max-height: 100%;
+  display: block;
 }
 
 body {

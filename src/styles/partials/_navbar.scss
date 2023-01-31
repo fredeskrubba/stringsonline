@@ -5,14 +5,17 @@ nav{
     top: 0;
     margin: 4vw 4vw;
     display: flex;
+    .nav-bg{
+        width: 70%;
+    }
     .nav-links{
         position: relative;
-        right: 26.2vw;
-        font-size: 1.1vw;
+        right: 20.5vw;
+        font-size: 1vw;
         display: flex;
         gap: 2vw;
         align-items: center;
-        width: 26vw;
+        width: 10vw;
         .link-button{
             color: variables.$text-color-1;
             text-decoration: none;
@@ -28,8 +31,8 @@ nav{
     }
     .search-field{
         position: relative;
-        right: 24vw;
-        top: -1.5vw;
+        right: 8vw;
+        top: -2vw;
         .upper-search {
             display: flex;
             color: variables.$text-color-1;
@@ -41,13 +44,18 @@ nav{
                 gap: 0.2vw;
                 font-size: 1vw;
                 
+                
             }
             .icon{
                 width: 2vw;
                 height: 2vw;
+                
             }
             .cart-icon{
                 margin-right: 1vw;
+                &:hover{
+                    cursor: pointer;
+                }
             }
             .cart-item-bubble {
                 position: absolute;
