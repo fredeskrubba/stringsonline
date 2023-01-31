@@ -1,0 +1,15 @@
+@use "./variables";
+
+.favourites-section{
+    margin: 10vw 0 0 10vw;
+    h2{
+        color: variables.$text-color-3;
+        font-weight: 400;
+        margin-bottom: 2vw;
+        .favourites-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+

@@ -3,6 +3,7 @@
 @use "./partials/home";
 @use "./partials/side-nav";
 @use "./partials/header";
+@use "./partials/favourites";
 
 body {
     background-color: variables.$background;

@@ -129,6 +129,19 @@ main .hero-grid {
   display: block;
 }
 
+.favourites-section {
+  margin: 10vw 0 0 10vw;
+}
+.favourites-section h2 {
+  color: #afafaf;
+  font-weight: 400;
+  margin-bottom: 2vw;
+}
+.favourites-section h2 .favourites-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 body {
   background-color: #131313;
 }
