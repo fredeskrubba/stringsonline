@@ -7,6 +7,7 @@ import {ReactComponent as CartIcon} from "../../assets/images/cart-icon.svg"
 import background from "../../assets/images/header-bg.png" 
 import { ReactComponent as ArrowIcon } from '../../assets/images/arrow-icon.svg'
 import useNavStore from './navstore'
+import Login from '../../pages/Login'
 
 const Navbar = () => {
     
@@ -50,8 +51,12 @@ const Navbar = () => {
             </section>
         </nav>
             <Route path="/">
-            <Home/>
+                <Home/>
             </Route>
+            <Route path="/login">
+            <Login/>
+            </Route>
+
     </div>
   )
 }

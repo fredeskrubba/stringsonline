@@ -4,6 +4,7 @@ import Header from '../components/header/Header'
 import usefavouriteStore from '../components/favourites/favouriteStore'
 import { useEffect } from 'react'
 import Favourites from '../components/favourites/Favourites'
+import Currentpage from '../components/currentPage/Currentpage'
 
 const Home = () => {
 
@@ -16,9 +17,7 @@ const Home = () => {
   
   return (
     <main>
-      <section className='current-page'>
-        Forside
-      </section>
+    <Currentpage/>
       <div className='hero-grid'>
         <SideNav/>
         <Header/>
