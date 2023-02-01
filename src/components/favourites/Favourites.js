@@ -8,6 +8,7 @@ const Favourites = () => {
         <section className='favourites-section'>
             <h2>Kundernes <b>favoritter</b></h2>
             <div className='favourites-grid'>
+            
             {favourites !== undefined ? favourites.productgroups.items[0].subgroups[0].products.map((favourite)=>{
                 return <FavouriteCard info={favourite}/>
                 }): "no favourites" }

@@ -10,7 +10,7 @@ nav{
     }
     .nav-links{
         position: relative;
-        right: 20.5vw;
+        right: 21vw;
         font-size: 1vw;
         display: flex;
         gap: 2vw;
@@ -19,7 +19,6 @@ nav{
         .link-button{
             color: variables.$text-color-1;
             text-decoration: none;
-            font-family: titillium-reg;
         }
         .login-btn{
             color: variables.$background;
