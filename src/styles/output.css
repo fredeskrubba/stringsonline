@@ -214,6 +214,55 @@ main .hero-grid {
   padding: 1vw 0;
 }
 
+.login-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 30%;
+  margin-bottom: 20vw;
+  gap: 5vw;
+}
+.login-grid .login-form {
+  color: #fff;
+  width: 30vw;
+  height: 30vw;
+}
+.login-grid .login-form h2 {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+.login-grid .login-form .subheader {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.login-grid .login-form h4 {
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  font-size: 1vw;
+  margin-bottom: 0.5vw;
+}
+.login-grid .login-form input {
+  all: unset;
+  background-color: #0A1D1C;
+  border: solid 1px #1F5E5B;
+  padding: 0.3vw 1vw;
+  border-radius: 5px;
+  width: 14vw;
+  color: #00F9B6;
+}
+.login-grid .login-form button {
+  all: unset;
+  display: block;
+  padding: 0.3vw 2vw;
+  border-radius: 5px;
+  margin-top: 1vw;
+  background-color: #00F9B6;
+  color: #1F5E5B;
+  font-weight: 700;
+}
+
 body {
   background-color: #131313;
   font-family: "Titillium Web", sans-serif;

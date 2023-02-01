@@ -1,0 +1,50 @@
+@use "./variables";
+
+.login-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 30%;
+    margin-bottom: 20vw;
+    gap: 5vw;
+    .login-form{
+        color: variables.$text-color-1;
+        width: 30vw;
+        height: 30vw;
+        h2{
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+        }
+        .subheader{
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+        }
+        h4{
+            font-weight: 200;
+            margin: 0;
+            padding: 0;
+            font-size: 1vw;
+            margin-bottom: 0.5vw;
+        }
+        input{
+            all: unset;
+            background-color: variables.$input-background;
+            border: solid 1px variables.$input-border;
+            padding: 0.3vw 1vw;
+            border-radius: 5px;
+            width: 14vw;
+            color: variables.$text-color-2;
+        }
+        button{
+            all: unset;
+            display: block;
+            padding: 0.3vw 2vw;
+            border-radius: 5px;
+            margin-top: 1vw;
+            background-color: variables.$text-color-2;
+            color: variables.$input-border;
+            font-weight: 700;
+        }
+    }
+}

@@ -78,8 +78,8 @@ nav{
             margin-top: 0.3vw;
             .searchbar{
                 padding: 0.8vw;
-                background-color: #0A1D1C;
-                outline: 1px solid #1F5E5B;
+                background-color: variables.$input-background;
+                outline: 1px solid variables.$input-border;
                 border: none;
                 border-radius: 3px;
                 width: 20vw;
