@@ -4,13 +4,6 @@ main{
     margin-top: 15vw;
     margin-left: 4vw;
     margin-right: 4vw;
-    .current-page{
-        border: 1px solid variables.$bottom-banner;
-        border-left: none;
-        border-right: none;
-        color: variables.$text-color-2;
-        margin-bottom: 2vw;
-    }
     .hero-grid{
         display: grid;
         grid-template-columns: 1fr 8fr;

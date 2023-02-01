@@ -5,7 +5,7 @@ import SideNav from '../components/sideNav/SideNav'
 const Login = () => {
   return (
     <main>
-        <Currentpage/>
+        <Currentpage currentPage={"Forside/login"}/>
         <div className='login-grid'>
             <SideNav/>
             <section className='login-form'>

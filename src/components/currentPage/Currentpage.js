@@ -1,9 +1,11 @@
 import React from 'react'
+import { ReactComponent as HomeIcon } from '../../assets/images/home-icon.svg'
 
-const Currentpage = () => {
+const Currentpage = ({currentPage}) => {
   return (
     <section className='current-page'>
-        Forside
+        <HomeIcon/>
+        <p>{currentPage}</p>
     </section>
   )
 }

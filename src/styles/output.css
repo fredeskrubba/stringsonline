@@ -98,13 +98,6 @@ main {
   margin-left: 4vw;
   margin-right: 4vw;
 }
-main .current-page {
-  border: 1px solid #393939;
-  border-left: none;
-  border-right: none;
-  color: #00F9B6;
-  margin-bottom: 2vw;
-}
 main .hero-grid {
   display: grid;
   grid-template-columns: 1fr 8fr;
@@ -267,6 +260,16 @@ body {
   background-color: #131313;
   font-family: "Titillium Web", sans-serif;
   box-sizing: border-box;
+}
+body .current-page {
+  border: 1px solid #393939;
+  border-left: none;
+  border-right: none;
+  color: #00F9B6;
+  margin-bottom: 2vw;
+  display: flex;
+  gap: 0.2vw;
+  align-items: center;
 }
 
 /*# sourceMappingURL=output.css.map */

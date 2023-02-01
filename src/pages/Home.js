@@ -17,7 +17,7 @@ const Home = () => {
   
   return (
     <main>
-    <Currentpage/>
+    <Currentpage currentPage={"Forside"}/>
       <div className='hero-grid'>
         <SideNav/>
         <Header/>
