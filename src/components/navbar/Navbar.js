@@ -8,6 +8,7 @@ import background from "../../assets/images/header-bg.png"
 import { ReactComponent as ArrowIcon } from '../../assets/images/arrow-icon.svg'
 import useNavStore from './navstore'
 import Login from '../../pages/Login'
+import Cart from '../../pages/Cart'
 
 const Navbar = () => {
     
@@ -40,7 +41,10 @@ const Navbar = () => {
                         <h6>+45 98 12 22 68</h6>
                     </div>
                     <div className='upper-search-div'>
-                        <CartIcon className='icon cart-icon'/>
+                        <Link href='/cart'>
+                            <CartIcon className='icon cart-icon'/>
+
+                        </Link>
                         <div className='cart-item-bubble'>{cartItems}</div>
                     </div>
                 </div>
@@ -55,6 +59,9 @@ const Navbar = () => {
             </Route>
             <Route path="/login">
             <Login/>
+            </Route>
+            <Route path="/cart">
+            <Cart/>
             </Route>
 
     </div>
