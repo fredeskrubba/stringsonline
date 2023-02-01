@@ -1,0 +1,74 @@
+@use "./variables";
+
+.favourites-section{
+    margin: 10vw 0 0 10vw;
+    h2{
+        color: variables.$text-color-3;
+        font-weight: 400;
+        margin-bottom: 2vw;
+
+    }
+    .favourites-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 15vw;
+        column-gap: 2vw;
+        .favourite-card{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 20vw;
+            width: 32vw;
+
+            img{
+                height: 100%;
+                width: 100%;
+                display: block;
+            }
+            .info-box{
+                border: 1px solid variables.$bottom-banner;
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 2vw;
+                display: flex;
+                flex-direction: column;
+                h4{
+                    color: white;
+                }
+                p{
+                    color: variables.$text-color-3;
+                    flex-grow: 1;
+                    p{
+                        margin: 0;
+                        color: variables.$text-color-2;
+                    }
+                }
+                .price-cont{
+                    display: flex;
+                    height: 2.5vw;
+                    width: 100%;
+                    align-items: center;
+                    font-size: 1vw;
+                    p{
+                        border: 1px solid variables.$bottom-banner;
+                        padding:  0.8vw;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        color: white;
+                    }
+                    button{
+                        all: unset;
+                        background-color: variables.$interaction;
+                        border: 1px solid variables.$interaction;
+                        color: white;
+                        outline: none;
+                        padding: 0.8vw;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+

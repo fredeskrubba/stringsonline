@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 nav {
   position: fixed;
   top: 0;
@@ -9,7 +10,7 @@ nav .nav-bg {
 }
 nav .nav-links {
   position: relative;
-  right: 20.5vw;
+  right: 21vw;
   font-size: 1vw;
   display: flex;
   gap: 2vw;
@@ -19,7 +20,6 @@ nav .nav-links {
 nav .nav-links .link-button {
   color: #fff;
   text-decoration: none;
-  font-family: titillium-reg;
 }
 nav .nav-links .login-btn {
   color: #131313;
@@ -129,8 +129,80 @@ main .hero-grid {
   display: block;
 }
 
+.favourites-section {
+  margin: 10vw 0 0 10vw;
+}
+.favourites-section h2 {
+  color: #afafaf;
+  font-weight: 400;
+  margin-bottom: 2vw;
+}
+.favourites-section .favourites-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 15vw;
+  column-gap: 2vw;
+}
+.favourites-section .favourites-grid .favourite-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 20vw;
+  width: 32vw;
+}
+.favourites-section .favourites-grid .favourite-card img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.favourites-section .favourites-grid .favourite-card .info-box {
+  border: 1px solid #393939;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+.favourites-section .favourites-grid .favourite-card .info-box h4 {
+  color: white;
+}
+.favourites-section .favourites-grid .favourite-card .info-box p {
+  color: #afafaf;
+  flex-grow: 1;
+}
+.favourites-section .favourites-grid .favourite-card .info-box p p {
+  margin: 0;
+  color: #00F9B6;
+}
+.favourites-section .favourites-grid .favourite-card .info-box .price-cont {
+  display: flex;
+  height: 2.5vw;
+  width: 100%;
+  align-items: center;
+  font-size: 1vw;
+}
+.favourites-section .favourites-grid .favourite-card .info-box .price-cont p {
+  border: 1px solid #393939;
+  padding: 0.8vw;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: white;
+}
+.favourites-section .favourites-grid .favourite-card .info-box .price-cont button {
+  all: unset;
+  background-color: #d10061;
+  border: 1px solid #d10061;
+  color: white;
+  outline: none;
+  padding: 0.8vw;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 body {
   background-color: #131313;
+  font-family: "Titillium Web", sans-serif;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=output.css.map */
