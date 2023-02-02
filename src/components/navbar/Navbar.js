@@ -9,6 +9,7 @@ import { ReactComponent as ArrowIcon } from '../../assets/images/arrow-icon.svg'
 import useNavStore from './navstore'
 import Login from '../../pages/Login'
 import Cart from '../../pages/Cart'
+import History from '../../pages/History'
 
 const Navbar = () => {
     
@@ -62,6 +63,9 @@ const Navbar = () => {
             </Route>
             <Route path="/cart">
             <Cart/>
+            </Route>
+            <Route path="/history">
+            <History/>
             </Route>
 
     </div>
