@@ -1,0 +1,43 @@
+@use "./variables";
+
+.product{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 2vw;
+    height: 15vw;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .product-info{
+        color: variables.$text-color-1;
+        display: flex;
+        border: 1px solid variables.$bottom-banner;
+        padding-left: 2vw;
+        p{
+            color: variables.$text-color-3;
+        }
+        .add-container{
+            width: 15vw;
+            margin: 1.5vw;
+            p{
+                color: variables.$text-color-1;
+            }
+            .price{
+                border: 
+                1px solid variables.$bottom-banner;
+                border-radius: 5px;
+                padding: 1vw;
+            }
+            .cart-add{
+                background-color: variables.$interaction;
+                padding: 1vw;
+                text-align: center;
+                border-radius: 5px;
+            }
+            .stock{
+                text-align: end;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@use "./variables";
+
+.electrics{
+    
+    .dropdowns{
+        display: flex;
+        gap: 2vw;
+        margin-left: auto;
+        justify-content: flex-end;
+        select{
+            background-color: variables.$text-color-2;
+            padding: 0.2vw;
+            padding-right: 2vw;
+            border: none;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
