@@ -14,4 +14,23 @@
     text-decoration: none;
     color: variables.$text-color-2;
    }
+   p{
+      color: variables.$text-color-2;
+      margin: 0;
+      &:hover{
+         cursor: pointer;
+      }
+   }
+   .sub-links-hidden{
+      display: none;
+      flex-direction: column;
+      font-size: small;
+      margin-left: 1vw;
+   }
+   .sub-links-show{
+      display: flex;
+      flex-direction: column;
+      font-size: small;
+      margin-left: 1vw;
+   }
 }

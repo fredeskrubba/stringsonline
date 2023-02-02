@@ -1,13 +1,24 @@
 import React from 'react'
 import "../../styles/output.css"
 import {Link} from "wouter"
+import { useState } from 'react'
 
 const SideNav = () => {
+    const [showGuitarLinks, setShowGuitarLinks] = useState("sub-links-hidden")
   return (
     <section className='side-nav'>
-        <Link href='/guitars/accoustics'>
-            <a>Guitarer</a>
-        </Link>
+            <p onClick={()=>{
+                showGuitarLinks === "sub-links-hidden" ? setShowGuitarLinks("sub-links-show") : setShowGuitarLinks("sub-links-hidden")
+            }}>Guitarer</p>
+            <div className={showGuitarLinks}>
+                <Link href='/guitars/accoustics'>
+                    <a>Akustiske</a>
+                </Link>
+                <Link href='/guitars/electrics'>
+                    <a>Elektriske</a>
+                </Link>
+            </div>
+        
         <Link href='/basses'>
             <a>Basser</a>
         </Link>

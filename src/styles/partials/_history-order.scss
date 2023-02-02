@@ -1,0 +1,31 @@
+@use "./variables";
+
+.history-order{
+    display: flex;
+    color: variables.$text-color-1;
+    justify-content: space-between;
+    border: solid 1px variables.$bottom-banner;
+    border-radius: 5px;
+    p{
+        margin: 0;
+        padding: 1vw;
+    }
+    .history-date{
+        border-right: 1px solid variables.$bottom-banner;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .history-price{
+    }
+    .history-number{
+        border-left: 1px solid variables.$bottom-banner;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: rgb(37, 35, 35);
+        span{
+            color: variables.$text-color-2;
+            margin-left: 1vw;
+        }
+        
+    }
+}

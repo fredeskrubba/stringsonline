@@ -19,7 +19,7 @@ nav .nav-links {
   display: flex;
   gap: 2vw;
   align-items: center;
-  width: 10vw;
+  width: 12vw;
 }
 nav .nav-links .link-button {
   color: #fff;
@@ -118,6 +118,25 @@ main .hero-grid {
 .side-nav a {
   text-decoration: none;
   color: #00F9B6;
+}
+.side-nav p {
+  color: #00F9B6;
+  margin: 0;
+}
+.side-nav p:hover {
+  cursor: pointer;
+}
+.side-nav .sub-links-hidden {
+  display: none;
+  flex-direction: column;
+  font-size: small;
+  margin-left: 1vw;
+}
+.side-nav .sub-links-show {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  margin-left: 1vw;
 }
 
 .hero-banner {
@@ -394,6 +413,33 @@ main .hero-grid {
   font-weight: 700;
 }
 
+.history-order {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  border: solid 1px #393939;
+  border-radius: 5px;
+}
+.history-order p {
+  margin: 0;
+  padding: 1vw;
+}
+.history-order .history-date {
+  border-right: 1px solid #393939;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.history-order .history-number {
+  border-left: 1px solid #393939;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: rgb(37, 35, 35);
+}
+.history-order .history-number span {
+  color: #00F9B6;
+  margin-left: 1vw;
+}
+
 body {
   background-color: #131313;
   font-family: "Titillium Web", sans-serif;
@@ -408,6 +454,11 @@ body .current-page {
   display: flex;
   gap: 0.2vw;
   align-items: center;
+}
+body .current-page .history-btn {
+  color: #00F9B6;
+  text-decoration: none;
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=output.css.map */

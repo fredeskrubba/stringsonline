@@ -17,7 +17,7 @@ const Cart = () => {
   const sum = 42
   return (
     <main>
-        <Currentpage currentPage={"Forside/Indkøbskurv"}/>
+        <Currentpage currentPage={"Forside/Indkøbskurv"} orderHistory={true}/>
         <div className='cart-grid'>
             <SideNav/>
             <section className='orders'>
