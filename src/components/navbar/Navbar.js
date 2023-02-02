@@ -10,6 +10,7 @@ import useNavStore from './navstore'
 import Login from '../../pages/Login'
 import Cart from '../../pages/Cart'
 import History from '../../pages/History'
+import Electrics from '../../pages/Electrics'
 
 const Navbar = () => {
     
@@ -59,13 +60,16 @@ const Navbar = () => {
                 <Home/>
             </Route>
             <Route path="/login">
-            <Login/>
+                <Login/>
             </Route>
             <Route path="/cart">
-            <Cart/>
+                <Cart/>
             </Route>
             <Route path="/history">
-            <History/>
+                <History/>
+            </Route>
+            <Route path="/guitars/electrics">
+                <Electrics/>
             </Route>
 
     </div>
