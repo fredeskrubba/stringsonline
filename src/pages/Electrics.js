@@ -1,20 +1,18 @@
 import React from 'react'
 import CurrentPage from "../components/currentPage/Currentpage"
 import SideNav from '../components/sideNav/SideNav'
-import image from "../assets/images/hero-banner.png"
 import Product from '../components/product/Product'
+import useProductStore from '../components/product/productStore'
+import { useEffect } from 'react'
 
 const Electrics = () => {
 
-    const products = [
-        {
-            img: image,
-            name: "Les Paul",
-            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed libero dolore reiciendis cumque sapiente!",
-            price: 290,
-            stock: 5
-        }
-    ] 
+    const fetchProducts = useProductStore((state)=>state.fetchProducts)
+    useEffect(() => {
+    fetchProducts("https://api.mediehuset.net/stringsonline/")
+  }, []);
+    const products = useProductStore((state)=>state.products)
+    console.log(products)
   return (
     <main>
         <CurrentPage currentPage={"Forside/Guitarer/Elektriske"}/>
@@ -34,9 +32,9 @@ const Electrics = () => {
                 </select>
             </div>
             <div className='products'>
-                {products.map((product)=>{
+                {products !== undefined ? products.productgroups.items[0].subgroups[0].products.map((product)=>{
                     return <Product product={product}/>
-                })}
+                }) : null}
             </div>
         </section>
       </div>
